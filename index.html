@@ -4,32 +4,153 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple Recipes</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-    <body>
-        <header>
-            <h1>Simple Recipes</h1>
-            <button>
-                <b>Рецепти</b>
-            </button>
-            <button>
-                <b>Про нас</b>
-            </button>
-        </header>
-        <main>
-            <div>
-                <h1>Що сьогодні приготувати?</h1>
-                <textarea>Тут магічно з'являться текст...</textarea>
-                <button>Знайти рецепти</button>
-            </div>
-            <section>
-                <h2></h2>
-                <div>
+<body>
 
-                </div>
-            </section>
-        </main>
-        <footer>
-            
-        </footer>
-    </body>
+    
+    <header>
+        <h1>🍴 Simple Recipes</h1>
+        <p>Смачні та прості рецепти на кожен день</p>
+    </header>
+
+    
+    <input type="text" id="search" placeholder="Введіть назву рецепта...">
+    <button onclick="searchRecipe()">Пошук</button>
+
+    <div id="result"></div>
+
+    
+    <nav>
+        <a href="#chicken">Куряче філе</a> |
+        <a href="#pie">Яблучний пиріг</a> |
+        <a href="#borscht">Український борщ</a> |
+        <a href="#pancakes">Домашні млинці</a> |
+        <a href="#other">Інші рецепти</a>
+    </nav>
+
+    <hr>
+
+    
+    <main>
+
+        
+        <section class="recipe" id="chicken">
+            <h2>🍗 Куряче філе</h2>
+
+            <h3>Інгредієнти:</h3>
+            <ul>
+                <li>Куряче філе</li>
+                <li>Сіль</li>
+                <li>Перець</li>
+                <li>Олія</li>
+            </ul>
+
+            <h3>Приготування:</h3>
+            <p>
+                Посолити та поперчити філе,
+                обсмажити на сковороді до золотистої скоринки.
+            </p>
+
+            <button>Деталі рецепта</button>
+        </section>
+
+        <hr>
+
+        
+        <section class="recipe" id="pie">
+            <h2>🍎 Яблучний пиріг</h2>
+
+            <h3>Інгредієнти:</h3>
+            <ul>
+                <li>Яблука</li>
+                <li>Борошно</li>
+                <li>Яйця</li>
+                <li>Цукор</li>
+                <li>Масло</li>
+            </ul>
+
+            <h3>Приготування:</h3>
+            <p>
+                Змішати інгредієнти, додати яблука,
+                випікати в духовці 30–40 хвилин.
+            </p>
+
+            <button>Деталі рецепта</button>
+        </section>
+
+        <hr>
+
+        
+        <section class="recipe" id="borscht">
+            <h2>🍲 Український борщ</h2>
+
+            <h3>Інгредієнти:</h3>
+            <ul>
+                <li>М'ясо (свинина або яловичина)</li>
+                <li>Буряк та капуста</li>
+                <li>Картопля та морква</li>
+                <li>Томатна паста та зелень</li>
+            </ul>
+
+            <h3>Приготування:</h3>
+            <p>
+                Зварити м'ясний бульйон. Додати картоплю та капусту. 
+                Зробити засмажку з буряка та моркви, додати в каструлю і варити до готовності.
+            </p>
+
+            <button>Деталі рецепта</button>
+        </section>
+
+        <hr>
+
+        
+        <section class="recipe" id="pancakes">
+            <h2>🥞 Домашні млинці</h2>
+
+            <h3>Інгредієнти:</h3>
+            <ul>
+                <li>Молоко</li>
+                <li>Борошно</li>
+                <li>Яйця</li>
+                <li>Цукор та дрібка солі</li>
+            </ul>
+
+            <h3>Приготування:</h3>
+            <p>
+                Збити яйця з цукром, додати молоко та борошно, замісити рідке тісто. 
+                Випікати тонкими млинцями на розігрітій сковороді.
+            </p>
+
+            <button>Деталі рецепта</button>
+        </section>
+
+        <hr>
+
+       
+        <section id="other">
+            <h2>📖 Інші рецепти</h2>
+            <p>Тут можна додати нові рецепти:</p>
+
+            <ul>
+                <li>🥗 Салат Цезар</li>
+                <li>🍕 Піца Маргарита</li>
+                <li>🍝 Паста Карбонара</li>
+                <li>🍰 Чізкейк</li>
+                <li>🥩 Соковитий гуляш</li>
+                <li>🥔 Деруни зі сметаною</li>
+                <li>🍵 Зелений чай з лімоном</li>
+                <li>🍦 Ванільне морозиво</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <hr>
+
+    <footer>
+        <p>© 2026 Simple Recipes. Всі права захищені.</p>
+    </footer>
+
+</body>
 </html>
