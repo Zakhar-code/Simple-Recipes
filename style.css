@@ -1,4 +1,4 @@
- :root {
+root {
             --primary: #ff8e25;
             --primary-hover: #e07413;
             --text: #2d3748;
@@ -32,7 +32,7 @@
             color: #718096;
             font-size: 1.1rem;
         }
-         /* ПОШУК ТА НАВІГАЦІЯ */
+
         input[type="text"] {
             display: block;
             width: 100%;
@@ -97,8 +97,8 @@
             border: 1px solid #edf2f7;
             scroll-margin-top: 20px;
         }
-        
-        section h2 {
+
+section h2 {
             font-size: 1.8rem;
             color: #1a202c;
             margin-top: 0;
@@ -202,4 +202,3 @@
             color: #a0aec0;
             font-size: 0.9rem;
             margin-top: 5px;
-        }
