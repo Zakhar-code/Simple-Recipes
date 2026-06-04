@@ -16,31 +16,36 @@ root {
 
         /* вершок сайту */
         header {
-            background: white;
+            background: #8ADD6B;
             text-align: center;
             padding: 40px 20px;
-            border-bottom: 1px solid #e2e8f0;
+            border-bottom: 1px solid #8ADD6B;
         }
 
         header h1 {
             font-size: 2.5rem;
-            color: #1a202c;
+            color: #ffffff;
             margin-bottom: 10px;
         }
 
+        .lol {
+            text-align: center;
+        }
         header p {
-            color: #718096;
+            color: #000000;
             font-size: 1.1rem;
         }
 
         input[type="text"] {
+            color: #ffffff;
             display: block;
             width: 100%;
             max-width: 600px;
             margin: 30px auto 20px auto;
             padding: 15px 25px;
             font-size: 1rem;
-            border: 2px solid #e2e8f0;
+            border: 2px solid #6FC763;
+            background-color: #86D569;
             border-radius: 30px;
             outline: none;
             box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
@@ -71,8 +76,9 @@ root {
         }
 
         nav a:hover {
-            background: #fff4eb;
+            background: #c5c4c4;
             color: var(--primary-hover);
+            padding: 10px;
         }
 
         /* Ховання старих речових Ліній <hr> */
@@ -151,13 +157,13 @@ section h2 {
 
         /* Кнопки */
         button {
-            background: #edf2f7;
-            color: #4a5568;
+            background: #8ADD6B;
+            color: #ffffff;
             border: none;
             padding: 12px 28px;
             font-size: 0.95rem;
             font-weight: 600;
-            border-radius: 25px;
+            border-radius: 10px;
             cursor: pointer;
             transition: all 0.2s;
         }
