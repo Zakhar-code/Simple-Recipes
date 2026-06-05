@@ -1,3 +1,5 @@
+const recipe = document.getElementById("recipe");
+
 async function searchRecipe() {
 
     const search =
@@ -9,13 +11,13 @@ async function searchRecipe() {
         document.getElementById("result");
 
     const main =
-        document.querySelector("main > div");
+        document.querySelector("main");
 
     if(search === ""){
 
         result.innerHTML = "";
 
-        main.style.display = "block";
+        search.style.display = "block";
 
         return;
     }
@@ -32,7 +34,7 @@ async function searchRecipe() {
 
         if(!data.meals){
 
-            main.style.display = "none";
+            recipe.style.display = "none";
 
             result.innerHTML = `
                 <div class="not-found">
@@ -45,7 +47,7 @@ async function searchRecipe() {
             return;
         }
 
-        main.style.display = "none";
+        recipe.style.display = "none";
 
         const meal = data.meals[0];
 
