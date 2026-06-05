@@ -1,5 +1,3 @@
-const recipe = document.getElementById("recipe");
-
 async function searchRecipe() {
 
     const search =
@@ -34,7 +32,7 @@ async function searchRecipe() {
 
         if(!data.meals){
 
-            recipe.style.display = "none";
+            main.style.display = "none";
 
             result.innerHTML = `
                 <div class="not-found">
@@ -47,7 +45,7 @@ async function searchRecipe() {
             return;
         }
 
-        recipe.style.display = "none";
+        main.style.display = "none";
 
         const meal = data.meals[0];
 
