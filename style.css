@@ -1,210 +1,442 @@
-root {
-            --primary: #ff8e25;
-            --primary-hover: #e07413;
-            --text: #2d3748;
-            --bg: #f7fafc;
-        }
+body{
+    font-family:'Geologica', sans-serif;
+    background:#e9e9e9;
+    margin:0;
+}
 
-        body {
-            font-family: 'Segoe UI', system-ui, sans-serif;
-            background-color: var(--bg);
-            color: var(--text);
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-        }
+header{
+    background:#8ADD6B;
+    padding:15px;
+    color:white;
+    font-size:18px;
+    font-weight:600;
+}
 
-        /* вершок сайту */
-        header {
-            background: #8ADD6B;
-            text-align: center;
-            padding: 40px 20px;
-            border-bottom: 1px solid #8ADD6B;
-        }
+main{
+    max-width:1200px;
+    margin:auto;
+    padding:20px;
+}
 
-        header h1 {
-            font-size: 2.5rem;
-            color: #ffffff;
-            margin-bottom: 10px;
-        }
+#search{
+    width:70%;
+    padding:12px;
 
-        .lol {
-            text-align: center;
-        }
-        header p {
-            color: #000000;
-            font-size: 1.1rem;
-        }
+    border:none;
 
-        input[type="text"] {
-            color: #ffffff;
-            display: block;
-            width: 100%;
-            max-width: 600px;
-            margin: 30px auto 20px auto;
-            padding: 15px 25px;
-            font-size: 1rem;
-            border: 2px solid #6FC763;
-            background-color: #86D569;
-            border-radius: 30px;
-            outline: none;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
-            transition: all 0.3s;
-        }
+    border-radius:8px;
 
-        input[type="text"]:focus {
-            border-color: var(--primary);
-            box-shadow: 0 4px 12px rgba(255, 142, 37, 0.15);
-        }
+    background:#7fd362;
 
-        nav {
-            text-align: center;
-            font-size: 1.05rem;
-            font-weight: 600;
-            margin-bottom: 30px;
-            color: #cbd5e0;
-            line-height: 2;
-        }
+    color:white;
 
-        nav a {
-            color: var(--primary);
-            text-decoration: none;
-            padding: 5px 15px;
-            border-radius: 20px;
-            transition: all 0.2s;
-            display: inline-block;
-        }
+    font-size:16px;
+}
 
-        nav a:hover {
-            background: #c5c4c4;
-            color: var(--primary-hover);
-            padding: 10px;
-        }
+#search::placeholder{
+    color:white;
+}
 
-        /* Ховання старих речових Ліній <hr> */
-        hr {
-            display: none;
-        }
+button{
+    background:#6cb852;
 
-        /* Основний контент */
-        main {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
+    color:white;
 
-        /* Картки рецептів */
-        section {
-            background: white;
-            border-radius: 16px;
-            padding: 35px;
-            margin-bottom: 30px;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02), 0 2px 4px -1px rgba(0, 0, 0, 0.02);
-            border: 1px solid #edf2f7;
-            scroll-margin-top: 20px;
-        }
+    border:none;
 
-section h2 {
-            font-size: 1.8rem;
-            color: #1a202c;
-            margin-top: 0;
-            margin-bottom: 25px;
-            padding-bottom: 12px;
-            border-bottom: 2px solid #f7fafc;
-        }
+    border-radius:8px;
 
-        section h3 {
-            font-size: 1.1rem;
-            color: #4a5568;
-            margin-top: 20px;
-            margin-bottom: 10px;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }
+    padding:10px 20px;
 
-        /* Список інградієнтів */
-        ul {
-            list-style: none;
-            padding-left: 0;
-            margin-bottom: 20px;
-        }
+    cursor:pointer;
 
-        section ul li {
-            padding: 10px 0;
-            border-bottom: 1px dashed #e2e8f0;
-            color: #4a5568;
-            position: relative;
-            padding-left: 20px;
-        }
+    font-family:'Geologica', sans-serif;
 
-        section ul li::before {
-            content: "•";
-            color: var(--primary);
-            font-weight: bold;
-            font-size: 1.3rem;
-            position: absolute;
-            left: 0;
-            top: 4px;
-        }
+    font-weight:600;
 
-        /* Приготування */
-        p {
-            color: #4a5568;
-            font-size: 1.05rem;
-            line-height: 1.7;
-            margin-bottom: 20px;
-        }
+    transition:.3s;
+}
 
-        /* Кнопки */
-        button {
-            background: #8ADD6B;
-            color: #ffffff;
-            border: none;
-            padding: 12px 28px;
-            font-size: 0.95rem;
-            font-weight: 600;
-            border-radius: 10px;
-            cursor: pointer;
-            transition: all 0.2s;
-        }
+button:hover{
+    background:#5ca245;
+}
 
-        button:hover {
-            background: #e2e8f0;
-            color: #1a202c;
-        }
+.recipe{
+    background:#8fd56f;
 
-        /* Інші рецепти */
-        #other ul {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-            gap: 15px;
-        }
+    border:2px solid #73bf58;
 
-        #other ul li {
-            background: #f7fafc;
-            border: 1px solid #e2e8f0;
-            padding: 15px;
-            border-radius: 12px;
-            font-weight: 600;
-            text-align: center;
-            padding-left: 15px;
-            transition: transform 0.2s, border-color 0.2s;
-        }
+    border-radius:10px;
 
-        #other ul li::before {
-            display: none;
-        }
+    padding:15px;
 
-        #other ul li:hover {
-            transform: translateY(-2px);
-            border-color: var(--primary);
-            background: white;
-        }
+    margin-bottom:20px;
 
-        /* Подвал */
-        footer {
-            text-align: center;
-            padding: 30px;
-            color: #a0aec0;
-            font-size: 0.9rem;
-            margin-top: 5px;
+    display:flex;
+
+    gap:20px;
+
+    align-items:flex-start;
+
+    box-shadow:0 3px 8px rgba(0,0,0,.1);
+}
+
+.recipe h2{
+    color:white;
+    margin-bottom:10px;
+}
+
+.recipe h3{
+    color:white;
+}
+
+.recipe p,
+.recipe li{
+    color:white;
+}
+
+.recipe ul{
+    margin-left:20px;
+}
+
+nav{
+    margin:20px 0;
+    text-align:center;
+}
+
+nav a{
+    text-decoration:none;
+
+    color:#387b25;
+
+    font-weight:600;
+
+    margin:0 10px;
+}
+
+nav a:hover{
+    color:#2f641f;
+}
+
+.lol{
+    text-align:center;
+
+    margin:25px 0;
+
+    font-weight:700;
+}
+
+section{
+    border-radius:10px;
+}
+
+#other{
+    background:#c7efb6;
+
+    padding:20px;
+
+    border-radius:10px;
+
+    margin-top:20px;
+}
+
+#other li{
+    margin-bottom:8px;
+}
+
+footer{
+    background:#8ADD6B;
+
+    padding:20px;
+
+    margin-top:40px;
+
+    color:white;
+}
+
+footer h2{
+    font-size:18px;
+    margin-bottom:15px;
+}
+
+footer p{
+    margin:8px 0;
+}
+
+.api-card{
+    display:flex;
+
+    gap:20px;
+
+    background:#8fd56f;
+
+    border-radius:10px;
+
+    padding:15px;
+
+    margin-top:20px;
+
+    box-shadow:0 3px 8px rgba(0,0,0,.1);
+}
+
+.api-card img{
+    width:250px;
+
+    height:250px;
+
+    object-fit:cover;
+
+    border-radius:8px;
+}
+
+.api-info{
+    flex:1;
+}
+
+.api-info h2{
+    color:white;
+    margin-bottom:10px;
+}
+
+.api-info h3{
+    color:white;
+}
+
+.api-info p,
+.api-info li{
+    color:white;
+}
+
+.not-found{
+    text-align:center;
+
+    margin-top:30px;
+
+    color:#666;
+
+}:root {
+    --primary: #ff8e25;
+    --primary-hover: #e07413;
+    --text: #2d3748;
+    --bg: #f7fafc;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Geologica', sans-serif;
+
+}.recipe{
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:15px;
+
+    background:#8dd46a;
+
+    border:2px solid #6eb851;
+
+    border-radius:8px;
+}
+
+.recipe-img{
+    width:220px;
+
+    height:150px;
+
+    object-fit:cover;
+
+    border-radius:5px;
+}
+
+.recipe-content{
+    flex:1;
+}
+
+.recipe h2{
+    color:white;
+    border:none;
+    margin-bottom:10px;
+}
+
+.recipe h3{
+    color:white;
+}
+
+.recipe p,
+.recipe li{
+    color:white;
+}
+
+.hidden-content{
+    display:none;
+}
+
+#result{
+    text-align:center;
+    margin:20px 0;
+}
+
+.success{
+    color:#4d8f3a;
+    border:none;
+}
+
+.not-found{
+    color:#666;
+    border:none;
+}
+
+header h1{
+    font-weight:700;
+}
+
+.lol{
+    font-weight:600;
+}
+
+nav a{
+    font-weight:500;
+}
+
+section h2{
+    font-weight:700;
+}
+
+section h3{
+    font-weight:600;
+}
+
+p{
+    font-weight:400;
+}
+
+li{
+    font-weight:400;
+}
+
+button{
+    font-weight:600;
+}
+
+input{
+    font-weight:500;
+}
+
+footer h2{
+    font-weight:600;
+}
+
+footer p{
+    font-weight:400;
+}
+
+input::placeholder{
+    font-family:'Geologica', sans-serif;
+    font-weight:500;
+    color:#ffffff;
+}
+
+.api-info h2{
+    font-weight:700;
+}
+
+.api-info h3{
+    font-weight:600;
+}
+
+.api-info p,
+.api-info li{
+    font-weight:400;
+}
+
+.not-found h2{
+    font-weight:700;
+}
+
+.not-found{
+
+    text-align:center;
+
+    margin-top:60px;
+
+    font-size:20px;
+}
+
+.api-info{
+
+    flex:1;
+
+    text-align:left;
+}
+
+.api-info h2{
+
+    margin-bottom:15px;
+
+    font-size:28px;
+
+    color:white;
+}
+
+.api-info h3{
+
+    margin-top:10px;
+
+    margin-bottom:8px;
+}
+
+.api-info{
+
+    flex:1;
+
+    text-align:left;
+}
+
+.api-info h2{
+
+    margin-bottom:15px;
+
+    font-size:28px;
+
+    color:white;
+}
+
+.api-info h3{
+
+    margin-top:10px;
+
+    margin-bottom:8px;
+}
+
+button{
+
+    background:#6CB852;
+
+    color:white;
+
+    border:none;
+
+    border-radius:8px;
+
+    padding:12px 30px;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    margin-top:15px;
+}
+
+button:hover{
+
+    background:#5AA043;
+
+    transform:translateY(-2px);
+}

@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple Recipes</title>
-
-</head>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -16,12 +18,19 @@
         <h1>Simple Recipes</h1>
     </header>
 
-    <b><input type="text" id="search" placeholder="Тут магічно зявляється текст..."></b>
-    <button onclick="searchRecipe()">Знайти рецепт</button>
+    <div class="search-container">
 
-    <div id="result"></div>
+    <h2>Що сьогодні приготувати?</h2>
 
-    <h2>Якщо ідеї втекли - шукай їх тут 😉</h2>
+    <input type="тут магічно зявляється текст..." id="search">
+
+    <button onclick="searchRecipe()">
+        Знайти рецепт
+    </button>
+
+    </div>
+
+    <h2 class = "lol">Якщо ідеї втекли - шукай їх тут 😉</h2>
     <nav>
         <a href="#chicken">Куряче філе</a> |
         <a href="#pie">Яблучний пиріг</a> |
