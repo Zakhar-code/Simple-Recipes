@@ -9,7 +9,7 @@ async function searchRecipe() {
         document.getElementById("result");
 
     const main =
-        document.querySelector("main");
+        document.querySelector("main > div");
 
     if(search === ""){
 
